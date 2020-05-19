@@ -39,10 +39,9 @@
     <%= render partial: 'gallery_modal' %>
   </div>
   <div id="related-products" />
-
+data-related-products-id="<%= @product.slug %>"
   <%= products_structured_data([@product]) %>
 
-  <%= render 'spree/shared/product_added_modal' %>
 <% end %>
 
 <div
