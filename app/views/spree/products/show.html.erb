@@ -1,7 +1,7 @@
 <% @body_id = 'product-details' %>
 
 <div class="container">
-    <%= spree_breadcrumbs(@taxon, '', @product) %>
+ <%= render partial: 'spree/products/volume_pricing', locals: { product: @product } %>
 </div>
 
 <% cache cache_key_for_product do %>
